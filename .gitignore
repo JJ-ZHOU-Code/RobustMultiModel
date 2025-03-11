@@ -1,0 +1,4 @@
+__pycache__/
+results/
+main_debug.py 
+*.sh
