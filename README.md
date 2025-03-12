@@ -29,7 +29,7 @@
 - [Requirements](#requirements)
 - [Usage](#Usage)
 - [Acknowledgement](#acknowledgement)
-- [License & Citation](#license--citation)
+<!-- - [License & Citation](#license--citation) -->
 
 ## Introduction
 
@@ -74,6 +74,12 @@ Experiments can be run using the following generic command-line:
 ```bash
 CUDA_VISIBLE_DEVICES=<CUDA_IDX> python main.py --split_dir <SPLIT_DIR> --data_root_dir <DATA_DIR> --feature_extractor <FEATURE> --wsi_encoding_dim <WSI_DIM> --fusion <FU_TYPE> --mode <MODE> --model_type <MODE_TYPE> --g_model_type <G_MODE_TYPE> --g_condition --generator --warm_epoch <WARM_EPOCH>--max_epochs <MAX_EPOCHES>
 ```
+
+## Acknowledgement
+We would like to thank the following repositories for their great works:
+- [CLAM](https://github.com/mahmoodlab/CLAM)
+- [CTransPath](https://github.com/Xiyue-Wang/TransPath)
+- [MCAT](https://github.com/mahmoodlab/MCAT)
 
 <!-- ## License & Citation
 This project is licensed under the Apache-2.0 License.
