@@ -53,10 +53,6 @@ class Generic_WSI_Survival_Dataset(Dataset):
                              'TCGA-HT-7483-01Z-00-DX1.7241DF0C-1881-4366-8DD9-11BF8BDD6FBF.svs',
                              'TCGA-06-0882-01Z-00-DX2.7ad706e3-002e-4e29-88a9-18953ba422bf.svs']
         slide_data.drop(slide_data[slide_data['slide_id'].isin(missing_slides_ls)].index, inplace=True)
-        missing_slides_csv = '/home/zjj/zjj/data/TCGA/gbmlgg/ExpData/tiles-l1-s256/missing_h5.csv'
-        missing_slides_df = pd.read_csv(missing_slides_csv)
-        missing_slides_ls = missing_slides_df['slide_id'].to_list()
-        slide_data.drop(slide_data[slide_data['slide_id'].isin(missing_slides_ls)].index, inplace=True)
 
         #slide_data = slide_data.drop(['Unnamed: 0'], axis=1)
         if 'case_id' not in slide_data:
